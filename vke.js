@@ -8,10 +8,10 @@ const readline = require("readline").createInterface({
   output: process.stdout
 });
 
-readline.question(`Boyunuzu giriniz: `, boy => {
-  readline.question(`Kilonuzu giriniz: `, kilo => {
-    var sonuc = kilo / (boy / 100 * boy / 100)
-    if (sonuc < 18.49) {
+readline.question(`Boyunuzu giriniz: `, boy => {//Boy giriş
+  readline.question(`Kilonuzu giriniz: `, kilo => {//Kilo giriş
+    var sonuc = kilo / (boy / 100 * boy / 100)//VKE hesaplama
+    if (sonuc < 18.49) {//Yanıtlar
       console.log("Vücut kitle endeksiniz: " + sonuc + "\nZayıfsınız.");
     } else if (sonuc > 18.49 && sonuc < 25) {
       console.log("Vücut kitle endeksiniz: " + sonuc + "\nNormalsiniz.");
