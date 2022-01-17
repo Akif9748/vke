@@ -3,14 +3,13 @@
 # 25 – 29, 9 kg/m. arasında olanlar: Fazla kilolu
 # 30 – 39, 9 kg/m. arasında olanlar: Obez
 # 40 kg/m.'nin üzerinde olanlar: İleri derecede obez (morbid obez), olarak görülür.
-kullanıcıboy = float(input("Boyunuzu giriniz: "))
-kullanıcıkilo = float(input("Kilonuzu giriniz: "))
+boy = float(input("Boyunuzu giriniz: "))
+kilo = float(input("Kilonuzu giriniz: "))
 
-if float(kullanıcıboy) > 5: #Sayı CM cinsinden girildiyse anlaşılır ve M cinsine çevrilir.
-    hesaplama = kullanıcıkilo / (kullanıcıboy/100)**2#Kullanıcıkilo / M birimindeki kullanıcı boyunun karesi
+if boy > 5: #Sayı CM cinsinden girildiyse anlaşılır ve M cinsine çevrilir.
+    boy /=100
 
-else: #Sayı M cinsindeyse
-    hesaplama = kullanıcıkilo / (float(kullanıcıboy)**2) #Kullancı kilo / Boyun karesi
+hesaplama = kilo / pow(boy,2) #Kullancı kilo / Boyun karesi
 
 print("Vücut kitle endeksiniz:", hesaplama) #Sayı konsola yazılır
 if hesaplama <= 18.5:#Cevaplar
