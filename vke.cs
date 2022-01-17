@@ -19,7 +19,7 @@ namespace vke
 
             if (boy > 5)
             {
-                boy = boy / 100;
+                boy /= 100;
             }
 
             double sonuc = kilo / Math.Pow(boy, 2); //VKE hesaplama
