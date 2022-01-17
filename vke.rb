@@ -9,7 +9,7 @@ puts "Kilonuz"
 kilo = gets.chomp.to_f
 
 if (boy > 5)
-    boy = boy / 100
+    boy /= 100
 end
 
 hesaplama = kilo / (boy ** 2) #Kullancı kilo / Boyun karesi
