@@ -11,7 +11,7 @@ const readline = require("readline").createInterface({
 readline.question(`Boyunuzu giriniz: `, boy => {//Boy giriş
   readline.question(`Kilonuzu giriniz: `, kilo => {//Kilo giriş
     if (boy > 5) {
-        boy = boy / 100;
+        boy /= 100;
     }
       var sonuc = (kilo / (boy ** 2)).toFixed(2)//VKE hesaplama
     if (sonuc < 18.49) {//Yanıtlar
