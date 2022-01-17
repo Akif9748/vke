@@ -7,7 +7,7 @@
             var boy = form.boy.value;
             var kilo = form.kilo.value;
             if (boy > 5) {
-                boy = boy / 100;
+                boy /= 100;
             }
             var sonuc = (kilo / (boy ** 2)).toFixed(2)//VKE hesaplama
             if (sonuc < 18.49) {//Yanıtlar
