@@ -3,7 +3,7 @@
 //25 – 29, 9 kg/m. arasında olanlar: Fazla kilolu
 //30 – 39, 9 kg/m. arasında olanlar: Obez
 //40 kg/m.'nin üzerinde olanlar: İleri derecede obez (morbid obez), olarak görülür.
-//Formul = kilo / boy (metre) Kare
+
 #include <iostream>
 #include <clocale>
 #include <math.h>
@@ -19,7 +19,7 @@ int main(){
     cout<<"Kilonuz:"<< endl;
     cin>>kilo;
     if (boy > 5) {
-        boy = boy / 100;
+        boy /= 100;
     }
     double sonuc = kilo / pow(boy,2);//VKE hesaplama
 
