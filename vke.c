@@ -5,6 +5,7 @@
 //40 kg/m.'nin üzerinde olanlar: İleri derecede obez (morbid obez), olarak görülür.
 
 #include <stdio.h>
+#include <math.h>
 
 int main() {
 
@@ -20,7 +21,7 @@ int main() {
         boy /= 100;
     }
 
-    float sonuc = kilo / (boy*boy);//VKE hesaplama
+    float sonuc = kilo / pow(boy,2);//VKE hesaplama
     printf("Vucut kitle endeksiniz: %f",sonuc);
 
 
