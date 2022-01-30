@@ -1,6 +1,7 @@
 # vke
 Vücut kitle endeksi hesaplama
-6 Farklı dilde kullanıcı girişli vke hesaplama.
+
+7 Farklı dilde kullanıcı girişli vke hesaplama.
 
 - Python
 - Node.js
