@@ -1,14 +1,22 @@
-<HTML>
+<!DOCTYPE html>
+<html>
 
-<HEAD>
-    <TITLE>Vücut kitle endeksi hesaplama</TITLE>
-    <SCRIPT LANGUAGE="JavaScript">
+<head>
+
+    <title>Vücut kitle endeksi hesaplama</title>
+    <style>
+  
+        .body {
+            background-color: antiquewhite;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
         function vke(form) {
             var boy = form.boy.value;
             var kilo = form.kilo.value;
-            if (boy > 5) {
-                boy /= 100;
-            }
+            if (boy > 5) boy /= 100;
+
             var sonuc = (kilo / (boy ** 2)).toFixed(2)//VKE hesaplama
             if (sonuc < 18.49) {//Yanıtlar
                 document.getElementById("vke").innerHTML = ("Vücut kitle endeksiniz: " + sonuc + "\nZayıfsınız.");
@@ -23,25 +31,34 @@
             }
 
         }
-    </SCRIPT>
-</HEAD>
+    </script>
+</head>
 
-<BODY>
-    <FORM NAME="form1" ACTION="" METHOD="GET">Boyunuz: <BR>
-        <INPUT TYPE="text" NAME="boy" VALUE="">
-        <P>
-        <FORM NAME="form2" ACTION="" METHOD="GET">Kilonuz: <BR>
-            <INPUT TYPE="text" NAME="kilo" VALUE="">
-            <P>
+<body class="body">
 
-                <INPUT TYPE="button" NAME="button" Value="Öğren!" onClick="vke(this.form);">
-        </FORM>
+    <form name="form1" action="" method="get">
+        Boyunuz:
+        <br>
+
+        <input type="text" name="boy" value="">
+        <br>
+        <form name="form2" action="" method="get">
+            Kilonuz: <br>
+            <input type="text" name="kilo" value="">
+
+            <br><br>
+
+            <input type="button" name="button" value="Öğren!" onClick="vke(this.form);">
+
+
+        </form>
+
+
 
         <h1>
             Vücut kitle endeksiniz:
         </h1>
         <p id="vke">Giriş bekleniyor...</p>
+</body>
 
-</BODY>
-
-</HTML>
+</html>

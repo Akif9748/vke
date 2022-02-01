@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Vücut kitle endeksi hesaplama</title>
+    <style>
+  
+        .body {
+            background-color: antiquewhite;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+        function vke(form) {
+            var boy = form.boy.value;
+            var kilo = form.kilo.value;
+            if (boy > 5) boy /= 100;
+
+            var sonuc = (kilo / (boy ** 2)).toFixed(2)//VKE hesaplama
+            if (sonuc < 18.49) {//Yanıtlar
+                document.getElementById("vke").innerHTML = ("Vücut kitle endeksiniz: " + sonuc + "\nZayıfsınız.");
+            } else if (sonuc > 18.49 && sonuc < 25) {
+                document.getElementById("vke").innerHTML = ("Vücut kitle endeksiniz: " + sonuc + "\nNormalsiniz.");
+            } else if (sonuc > 24.99 && sonuc < 30) {
+                document.getElementById("vke").innerHTML = ("Vücut kitle endeksiniz: " + sonuc + "\nFazla kilolusunuz, sağlığınız için kilo verin.");
+            } else if (sonuc > 29.99 && sonuc < 40) {
+                document.getElementById("vke").innerHTML = ("Vücut kitle endeksiniz: " + sonuc + "\nObezitesiniz, sağlığınız için kilo verin.");
+            } else if (sonuc > 40) {
+                document.getElementById("vke").innerHTML = ("Vücut kitle endeksiniz: " + sonuc + "\nİleri obezitesiniz..");
+            }
+
+        }
+    </script>
+</head>
+
+<body class="body">
+
+    <form name="form1" action="" method="get">
+        Boyunuz:
+        <br>
+
+        <input type="text" name="boy" value="">
+        <br>
+        <form name="form2" action="" method="get">
+            Kilonuz: <br>
+            <input type="text" name="kilo" value="">
+
+            <br><br>
+
+            <input type="button" name="button" value="Öğren!" onClick="vke(this.form);">
+
+
+        </form>
+
+
+
+        <h1>
+            Vücut kitle endeksiniz:
+        </h1>
+        <p id="vke">Giriş bekleniyor...</p>
+</body>
+
+</html>
