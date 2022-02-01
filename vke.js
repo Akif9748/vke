@@ -1,8 +1,3 @@
-//18, 5 kg/m.'nin altında olanlar: Zayıf
-//18.5 – 24, 9 kg/m. arasında olanlar: Normal kilolu
-//25 – 29, 9 kg/m. arasında olanlar: Fazla kilolu
-//30 – 39, 9 kg/m. arasında olanlar: Obez
-//40 kg/m.'nin üzerinde olanlar: İleri derecede obez (morbid obez), olarak görülür.
 const readline = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout
@@ -10,10 +5,9 @@ const readline = require("readline").createInterface({
 
 readline.question(`Boyunuzu giriniz: `, boy => {//Boy giriş
   readline.question(`Kilonuzu giriniz: `, kilo => {//Kilo giriş
-    if (boy > 5) {
-        boy /= 100;
-    }
-      var sonuc = (kilo / (boy ** 2)).toFixed(2)//VKE hesaplama
+    if (boy > 5) boy /= 100;
+
+    const sonuc = (kilo / (boy ** 2)).toFixed(2)//VKE hesaplama
     if (sonuc < 18.49) {//Yanıtlar
       console.log("Vücut kitle endeksiniz: " + sonuc + "\nZayıfsınız.");
     } else if (sonuc > 18.49 && sonuc < 25) {
