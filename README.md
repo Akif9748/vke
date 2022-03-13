@@ -1,7 +1,7 @@
 # vke
 Vücut kitle endeksi hesaplama
 
-7 Farklı dilde kullanıcı girişli vke hesaplama.
+8 Farklı dilde kullanıcı girişli vke hesaplama.
 
 - Python
 - Node.js
@@ -10,7 +10,9 @@ Vücut kitle endeksi hesaplama
 - C#
 - C++
 - C
+- Java
 
+Formul: `kilo / boy ^ 2`
 
 18, 5 kg/m.'nin altında olanlar: Zayıf
 
