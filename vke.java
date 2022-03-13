@@ -9,7 +9,7 @@ public class Vke {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Boyunuzu giriniz: ");
-        int boy = scan.nextInt();
+        double boy = scan.nextDouble();
 
         System.out.print("Kilonuzu giriniz: ");
         int kilo = scan.nextInt();
