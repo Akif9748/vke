@@ -18,7 +18,7 @@ public class Vke {
 
         if (boy > 5) boy /= 100;
 
-    float sonuc = kilo / Math.pow(boy, 2)//VKE hesaplama
+    double sonuc = kilo / Math.pow(boy, 2);//VKE hesaplama
     System.out.println("Vücut kitle endeksiniz: ", sonuc); 
     if (sonuc < 18.49) {//Yanıtlar
       System.out.println("Zayıfsınız.");
