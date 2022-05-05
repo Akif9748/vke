@@ -11,6 +11,7 @@ Vücut kitle endeksi hesaplama
 - C++
 - C
 - Java
+- Rust
 
 Formul: `kilo / boy ^ 2`
 
