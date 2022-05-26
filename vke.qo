@@ -1,0 +1,23 @@
+boy = toInt(input("Boyunuzu giriniz! (cm) "));
+kilo = toInt(input("Kilonuzu giriniz! "));
+
+/* CM metre dönüştürücü */
+if (boy > 5) {
+    boy = boy / 100;
+};
+
+sonuc = kilo / (boy * boy);
+
+println("Vücut kitle endeksiniz: ", sonuc); 
+ 
+if (sonuc < (18 + 1/2)) {
+    println("Zayıfsınız.");
+} else if (sonuc > 18 && sonuc < 25) {
+    println("Normalsiniz.");
+} else if (sonuc > 25 && sonuc < 30) {
+    println("Fazla kilolusunuz, sağlığınız için kilo verin.");
+} else if (sonuc > 30 && sonuc < 40) {
+    println("Obezitesiniz, sağlığınız için kilo verin.");
+} else if (sonuc > 40 ){
+    println("İleri obezitesiniz..");
+};
