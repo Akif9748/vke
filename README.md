@@ -1,7 +1,7 @@
 # vke
 Vücut kitle endeksi hesaplama
 
-8 Farklı dilde kullanıcı girişli vke hesaplama.
+9 Farklı dilde kullanıcı girişli vke hesaplama.
 
 - Python
 - Node.js
@@ -12,6 +12,7 @@ Vücut kitle endeksi hesaplama
 - C
 - Java
 - Rust
+- Qolang
 
 Formul: `kilo / boy ^ 2`
 
